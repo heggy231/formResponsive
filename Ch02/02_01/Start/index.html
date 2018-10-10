@@ -13,8 +13,8 @@
 <!-- each form begins with opening closing tag -->
 <!-- each form should have an unique id which helps w/ css -->
 <!-- tell browser what to do when user submits a form method (get | post),
-			action(URI URL what the data is being sent to
-			when action="" empty data doesn't get sent anywhere -->
+			action(URI - what the data is being sent to
+			when action="URL" empty action doesn't get sent anywhere -->
 			
 <form id="questions" method="post" action="">
 <!-- <input><select> <textarea> few fields to collect data 
@@ -22,6 +22,9 @@
 		 id="idname" associate each input field with a label and often the same as
 		 name value 
 		 input is a place for user to enter their input but no question is listed yet-->
+	<!-- for attribute is tells the screenreader which label goes with which input -->
+	<label for="favcolor">What is your favorite color</label>
+
 	<input type="text" name="favcolor" id="favcolor">
 </form>
 
